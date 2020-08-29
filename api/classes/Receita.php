@@ -1,9 +1,9 @@
 <?php
 
 class Receita{
-    public $titulo;
-    public $valor;
-    public $data;
+    // public $titulo;
+    // public $valor;
+    // public $data;
 
     public function criarReceita(){
 
