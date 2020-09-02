@@ -85,7 +85,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+                <li class="nav-item ">
                   <a class="nav-link" href="#caracteristicas">Sobre</a>
                 </li>
                 <li class="nav-item">
@@ -230,7 +230,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script>
 
-        console.log(hash.id);
+
+     
+
+        
 
         // When the user scrolls the page, execute myFunction
         window.onscroll = function() {myFunction()};
