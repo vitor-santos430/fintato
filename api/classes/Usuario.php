@@ -1,5 +1,7 @@
 <?php
 
+require_once 'Banco.php';
+
 class Usuario{
     // public $nome;
     // public $email;
@@ -14,7 +16,8 @@ class Usuario{
 
         if($nome != "" || $email != "" || $senha != ""){
             //cria conexão
-            $con = new PDO('mysql: host=localhost; dbname=db_fintato;','root','');
+            $conecta = new Conexao;
+            $con = $conecta->conecta();
 
             //realiza consulta ao Banco de Dados
             $sql = "INSERT INTO tb_usuario(nome,email,senha,access_key,adm,st_ativo) values ('$nome','$email','$senha','$access_key',0,1)";
@@ -38,7 +41,9 @@ class Usuario{
 
         if($nome != "" || $email != ""){
             //cria conexão
-            $con = new PDO('mysql: host=localhost; dbname=db_fintato;','root','');
+            //cria conexão
+            $conecta = new Conexao;
+            $con = $conecta->conecta();
 
             //realiza consulta ao Banco de Dados
             if($senha!=""){
@@ -70,7 +75,8 @@ class Usuario{
         $senha = isset($_POST['senha'])?$_POST['senha']:'';
 
         //cria conexão
-        $con = new PDO('mysql: host=localhost; dbname=db_fintato;','root','');
+        $conecta = new Conexao;
+        $con = $conecta->conecta();
 
         //realiza consulta ao Banco de Dados
         $sql = "SELECT * FROM tb_usuario WHERE email = '$email'";
@@ -105,7 +111,8 @@ class Usuario{
     public function listarUsuarioEspecifico($id = "",$key = ""){
         if($id!="" and $key!=""){
             //cria conexão
-            $con = new PDO('mysql: host=localhost; dbname=db_fintato;','root','');
+            $conecta = new Conexao;
+            $con = $conecta->conecta();
 
             //realiza consulta ao Banco de Dados
             $sql = "SELECT * FROM tb_usuario WHERE id_usuario = $id";
@@ -138,7 +145,8 @@ class Usuario{
         $generate = md5(mt_rand());
         
         //cria conexão
-        $con = new PDO('mysql: host=localhost; dbname=db_fintato;','root','');
+        $conecta = new Conexao;
+        $con = $conecta->conecta();
 
         //realiza consulta ao Banco de Dados
         $sql = "SELECT * FROM tb_usuario WHERE access_key = '$generate'";
