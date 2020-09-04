@@ -1,0 +1,15 @@
+.titulo::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: blink;
+}
+
+@keyframes blink{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
