@@ -8,7 +8,7 @@
     <meta name="generator" content="Jekyll v3.8.5">
     <link rel="shortcut icon" href="img/logo.png" />
     <title>Cadastro · Fintato</title>
-	 
+
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
     <script src="bootstrap/js/bootstrap.min.js" ></script>
@@ -59,11 +59,11 @@
 
         </style>
         <!-- Custom styles for this template -->
-        
+
   </head>
       <body>
 
-        
+
 
         <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top" >
           <div class="container">
@@ -72,8 +72,8 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-              
-                
+
+
               <a class="btn btn-outline-light ml-auto" href="login">Entrar</a>
             </div>
           </div>
@@ -82,13 +82,13 @@
 
 
         <div class="container">
-            
+
           <!-- START THE FEATURETTES -->
           <div class="pt-5 px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" id="caracteristicas">
               <h2 class="display-5 pt-4">Cadastro</h2>
           </div>
 
-          <form>
+          <form method="post">
             <div class="form-group">
               <label for="name">Nome Completo</label>
               <input type="text" class="form-control" id="inputAddress" name="nome"  placeholder="Ex: Alice Barbosa Pereira" required>
@@ -108,8 +108,38 @@
               </div>
             </div>
 
-            <button type="submit" class="btn btn-primary " style="background:#218F86">Cadastrar</button>
+            <button type="submit" class="btn btn-primary " name="cadastrar" style="background:#218F86">Cadastrar</button>
           </form>
+          <?php
+              if(isset($_POST['cadastrar'])){
+
+                  $ch = curl_init("https://fintato.000webhostapp.com/api/usuario/cadastrar");
+
+                  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                  if ($_POST['senha'] == $_POST['confirmaSenha']) {
+                    $dados = array(
+                        'nome'=>$_POST['nome'],
+                        'email'=>$_POST['email'],
+                        'senha'=>$_POST['senha']
+
+                    );
+                    curl_setopt($ch, CURLOPT_POST, true);
+
+                    curl_setopt($ch, CURLOPT_POSTFIELDS, $dados);
+
+
+
+                    curl_exec($ch);
+
+
+                    curl_close($ch);
+
+                  }
+
+
+
+              }
+          ?>
             <br>
 <!-- END THE FEATURETTES -->
 
