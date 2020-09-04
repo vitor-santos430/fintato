@@ -13,7 +13,7 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <script src="bootstrap/js/bootstrap.min.js"></script>
-   
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
@@ -37,8 +37,8 @@
     <!-- Custom styles for this template -->
     <link href="frontend/login/signin.css" rel="stylesheet">
 
-    <?php 
-      session_start(); 
+    <?php
+      session_start();
       unset($_SESSION['logado']);
      ?>
   </head>
@@ -56,7 +56,7 @@
                 <a class="nav-link" href="home">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="cadastro_gratis.php">Inicie Grátis</a>
+                <a class="nav-link" href="cadastro">Inicie Grátis</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="cadastro_enterprise.php">Plano TURBO</a>
@@ -82,20 +82,20 @@
   <p class="mt-5 mb-3 text-muted">Fintato - 2020</p>
 
       <?php
-      
+
       if(isset($_POST['btn']))
       {
         $email = $_POST['email'];
         $senha = $_POST['senha'];
         require("controllers/validaLogins.php");
       }
-      
+
       ?>
 
 </form>
-    
+
     <script src="bootstrap/js/bootstrap.min.js" ></script>
-   
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 </body>
