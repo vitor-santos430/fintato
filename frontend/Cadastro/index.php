@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
-    <meta charset="utf-8">
+    <meta charset=" utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Aqui você terá total controle de suas finanças, vem para Fintato.com">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
@@ -91,20 +91,20 @@
           <form>
             <div class="form-group">
               <label for="name">Nome Completo</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="Ex: Alice Barbosa Pereira">
+              <input type="text" class="form-control" id="inputAddress" name="Txt_name"  placeholder="Ex: Alice Barbosa Pereira">
             </div>
               <div class="form-group ">
                 <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Ex: fintato@Fintato.com">
+                <input type="email" class="form-control" id="inputEmail4" name="Txt_email"  placeholder="Ex: fintato@Fintato.com">
               </div>
               <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputPassword4">Senha</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                <input type="password" class="form-control" id="inputPassword4" name="Txt_password" placeholder="Senha">
               </div>
               <div class="form-group col-md-6">
                 <label for="inputPassword4">Digite novamente</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                <input type="password" class="form-control" id="inputPassword4" name="Txt_Rpassword"  placeholder="Senha">
               </div>
             </div>
 
