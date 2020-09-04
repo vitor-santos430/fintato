@@ -1,6 +1,5 @@
 <?php
 
-
 class Rest{
     public static function open($requisicao){
         
