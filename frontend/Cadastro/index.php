@@ -7,15 +7,8 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
     <link rel="shortcut icon" href="img/logo.png" />
-    <title>Home · Fintato</title>
-	 <style>
-		#task-bar1402685299{
-
-			display: none;
-		}
-	 </style>
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/pricing/">
-
+    <title>Cadastro · Fintato</title>
+	 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
     <script src="bootstrap/js/bootstrap.min.js" ></script>
@@ -66,16 +59,11 @@
 
         </style>
         <!-- Custom styles for this template -->
-        <link href="pricing.css" rel="stylesheet">
+        
   </head>
       <body>
 
-        <div class="py-5">
-            <center>
-                <img src="img/fintato.png" alt="Menu Sticky Fintato!" width="200" id="img_menu_sticky">
-
-            </center>
-        </div>
+        
 
         <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top" >
           <div class="container">
@@ -84,18 +72,9 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item ">
-                  <a class="nav-link" href="#caracteristicas">Sobre</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#planos">Planos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#TeamFintato">Team Fintato</a>
-                </li>
-              </ul>
-              <a class="btn btn-outline-light" href="login">Entrar</a>
+              
+                
+              <a class="btn btn-outline-light ml-auto" href="login">Entrar</a>
             </div>
           </div>
         </nav>
@@ -103,11 +82,10 @@
 
 
         <div class="container">
-
-
+            
           <!-- START THE FEATURETTES -->
-          <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" id="caracteristicas">
-              <h2 class="display-5">Cadastro</h2>
+          <div class="pt-5 px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" id="caracteristicas">
+              <h2 class="display-5 pt-4">Cadastro</h2>
           </div>
 
           <form>
@@ -130,9 +108,9 @@
               </div>
             </div>
 
-            <button type="submit" class="btn btn-primary " style="background:#218F86">Entrar</button>
+            <button type="submit" class="btn btn-primary " style="background:#218F86">Cadastrar</button>
           </form>
-
+            <br>
 <!-- END THE FEATURETTES -->
 
         <footer class="pt-4 my-md-5 pt-md-5 border-top">
@@ -145,22 +123,22 @@
               <div class="col-6 col-md">
                 <h5>Planos</h5>
                 <ul class="list-unstyled text-small">
-                  <li><a class="text-muted" href="#planos">Gratuito</a></li>
-                  <li><a class="text-muted" href="#planos">TURBO</a></li>
+                  <li><a class="text-muted" href="home#planos">Gratuito</a></li>
+                  <li><a class="text-muted" href="home#planos">TURBO</a></li>
                 </ul>
               </div>
               <div class="col-6 col-md">
                 <h5>Características</h5>
                 <ul class="list-unstyled text-small">
-                  <li><a class="text-muted" href="#caracteristicas">Cálculo de Despesas Mensais</a></li>
-                  <li><a class="text-muted" href="#caracteristicas">Cálculo de Rentabilidade</a></li>
-                  <li><a class="text-muted" href="#caracteristicas">Despesas de cartões</a></li>
+                  <li><a class="text-muted" href="home#caracteristicas">Cálculo de Despesas Mensais</a></li>
+                  <li><a class="text-muted" href="home#caracteristicas">Cálculo de Rentabilidade</a></li>
+                  <li><a class="text-muted" href="home#caracteristicas">Despesas de cartões</a></li>
                 </ul>
               </div>
               <div class="col-6 col-md">
                 <h5>Sobre</h5>
                 <ul class="list-unstyled text-small">
-                  <li><a class="text-muted" href="#TeamFintato">Team Fintato</a></li>
+                  <li><a class="text-muted" href="home#TeamFintato">Team Fintato</a></li>
                 </ul>
               </div>
             </div>

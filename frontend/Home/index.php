@@ -8,13 +8,6 @@
     <meta name="generator" content="Jekyll v3.8.5">
     <link rel="shortcut icon" href="img/logo.png" />
     <title>Home · Fintato</title>
-	<style>
-		#task-bar1402685299{
-	
-			display: none;
-		}
-	</style>
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/pricing/">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
@@ -66,14 +59,13 @@
             
         </style>
         <!-- Custom styles for this template -->
-        <link href="pricing.css" rel="stylesheet">
+        
       </head>
       <body>
         
         <div class="py-5">
             <center>
                 <img src="img/fintato.png" alt="Menu Sticky Fintato!" width="200" id="img_menu_sticky">
-                
             </center>
         </div>
 
@@ -143,7 +135,7 @@
                   <li>+ Tenha Visão da Sua situação financeira</li>
                   <li>+ Não precisa se matar com fórmulas de Excel</li>
                 </ul>
-                <button type="button" class="btn btn-lg btn-dark btn-block text-light" onclick="window.location.href = 'cadastro_enterprise.php'">Não Perca Tempo</button>
+                <button type="button" class="btn btn-lg btn-dark btn-block text-light" onclick="window.location.href = 'cadastro'">Não Perca Tempo</button>
               </div>
             </div>
 
@@ -161,7 +153,7 @@
                   <li>+ Modelos Econômicos</li>
                   <li>+ Sem Anuncios</li>
                 </ul>
-                <button type="button" class="btn btn-lg btn-block text-light" style="background-color: #015758;" onclick="window.location.href = 'cadastro_enterprise.php'">Não Perca Tempo</button>
+                <button type="button" class="btn btn-lg btn-block text-light" style="background-color: #015758;" onclick="window.location.href = 'cadastro'">Não Perca Tempo</button>
               </div>
             </div>
             
