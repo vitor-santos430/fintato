@@ -91,20 +91,20 @@
           <form>
             <div class="form-group">
               <label for="name">Nome Completo</label>
-              <input type="text" class="form-control" id="inputAddress" name="Txt_name"  placeholder="Ex: Alice Barbosa Pereira">
+              <input type="text" class="form-control" id="inputAddress" name="nome"  placeholder="Ex: Alice Barbosa Pereira" required>
             </div>
               <div class="form-group ">
                 <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" name="Txt_email"  placeholder="Ex: fintato@Fintato.com">
+                <input type="email" class="form-control" id="inputEmail4" name="email"  placeholder="Ex: fintato@Fintato.com" required>
               </div>
               <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputPassword4">Senha</label>
-                <input type="password" class="form-control" id="inputPassword4" name="Txt_password" placeholder="Senha">
+                <input type="password" class="form-control" id="inputPassword4" name="senha" placeholder="Senha" required>
               </div>
               <div class="form-group col-md-6">
                 <label for="inputPassword4">Digite novamente</label>
-                <input type="password" class="form-control" id="inputPassword4" name="Txt_Rpassword"  placeholder="Senha">
+                <input type="password" class="form-control" id="inputPassword4" name="confirmaSenha"  placeholder="Senha" required>
               </div>
             </div>
 
