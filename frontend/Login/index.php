@@ -8,14 +8,22 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <link rel="shortcut icon" href="img/logo.png" />
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Entre · Caishen</title>
+    <title>Entre · Fintato</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
     <script src="bootstrap/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script>
+      function retornaInput(){
+        var email = "<?= isset($_POST['email'])?$_POST['email']:"" ?>";
+        var senha = "<?= isset($_POST['senha'])?$_POST['senha']:"" ?>";
+        
+        document.getElementById('inputEmail').value = email;
+        document.getElementById('inputPassword').value = senha;
+      }
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
@@ -82,7 +90,6 @@
     </label>
   </div>
   <button class="btn btn-lg text-light btn-block" style="background-color: #218F86;" type="submit" name="entrar">Entrar</button>
-  <p class="mt-5 mb-3 text-muted">Fintato - 2020</p>
 
       <?php
 
@@ -116,16 +123,18 @@
                 echo '<br><a href="forms_editar.php?id='.$_SESSION['user']['id'].'">Editar dados</a>';
                 echo "<script>window.location.href = 'painel';</script>";
             }else{
-                echo $retorno['dados'];
+                echo "<div class='text-danger'><br>";
+                print_r($retorno['dados']);
+                echo "</div><script>retornaInput();</script>";
             }
       }
 
       ?>
-
+<p class="mt-5 mb-3 text-muted">Fintato - 2020</p>
 </form>
-
+    
     <script src="bootstrap/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 </body>

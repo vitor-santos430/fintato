@@ -98,12 +98,16 @@ class Usuario{
             else{
                 $senhaBanco = "";
             }
-        }
-
-        if($senhaBanco==""){
-            //Cria Excption
+        }else{
             throw new Exception("E-mail ou senha inválido");
         }
+
+        if(isset($senhaBanco)){
+            if($senhaBanco==""){
+                //Cria Excption
+                throw new Exception("E-mail ou senha inválido");
+            }
+        }    
         
         return $resultados;
     }
