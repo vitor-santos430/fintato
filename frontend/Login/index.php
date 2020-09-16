@@ -114,13 +114,12 @@
 
             $retorno = json_decode($resultado,1);
             if(isset($retorno['dados']['msg'])){
-                echo $retorno['dados']['msg'];
+                echo "<br>".$retorno['dados']['msg'];
                 $_SESSION['user'] = array(
                     'key'=>$retorno['dados']['accessKey'],
                     'id'=>$retorno['dados']['id']
                 );
 
-                echo '<br><a href="forms_editar.php?id='.$_SESSION['user']['id'].'">Editar dados</a>';
                 echo "<script>window.location.href = 'painel';</script>";
             }else{
                 echo "<div class='text-danger'><br>";
