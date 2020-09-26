@@ -69,15 +69,15 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="painel/receitas">
               <span data-feather="file"></span>
-              Orders
+              Receitas
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="painel/gastos">
               <span data-feather="shopping-cart"></span>
-              Products
+              Gastos
             </a>
           </li>
           <li class="nav-item">

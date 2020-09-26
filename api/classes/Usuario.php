@@ -144,6 +144,26 @@ class Usuario{
         return $resultados;
     }
 
+    public function excluir(){
+        $id = isset($_POST['id'])?$_POST['id']:'';
+
+        $conecta = new Conexao;
+        $con = $conecta->conecta();
+
+        // Exclui usuario 
+        $sql = "UPDATE tb_usuario set 
+                st_ativo = 0
+                where id_usuario = $id";
+
+        $sql = $con->prepare($sql);
+
+        if($sql->execute()){
+            return "Usuário Excluído com Sucesso!";
+        }else{
+            throw new Exception("Falha ao excluir usuário");
+        }
+    }
+
     public function keyGenerate(){
         
         $generate = md5(mt_rand());

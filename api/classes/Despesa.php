@@ -5,7 +5,7 @@ class Despesa{
     // public $valor;
     // public $data;
 
-    public function criarDespesa(){
+    public function registrar(){
 
     }
 

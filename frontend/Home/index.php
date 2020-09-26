@@ -131,8 +131,8 @@
               <div class="card-body">
                 <h1 class="card-title pricing-card-title">R$0 <small class="text-muted">/ Mês</small></h1>
                 <ul class="list-unstyled mt-3 mb-4">
-                    <li>+ Adicione despesas ILIMITADAS</li>
-                  <li>+ Adicione receitas ILIMITADAS</li>
+                    <li>+ Adicione despesas </li>
+                  <li>+ Adicione receitas </li>
                   <li>+ Tenha Visão da Sua situação financeira</li>
                   <li>+ Não precisa se matar com fórmulas de Excel</li>
                 </ul>

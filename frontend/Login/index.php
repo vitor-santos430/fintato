@@ -95,7 +95,7 @@
 
       if(isset($_POST['entrar']))
       {
-          $ch = curl_init("https://fintato.000webhostapp.com/api/usuario/login/");
+          $ch = curl_init("http://localhost/fintato/api/usuario/login/");
 
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 

@@ -113,7 +113,7 @@
           <?php
               if(isset($_POST['cadastrar'])){
 
-                  $ch = curl_init("https://fintato.000webhostapp.com/api/usuario/cadastrar");
+                  $ch = curl_init("http://localhost/fintato/api/usuario/cadastrar");
 
                   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                   if ($_POST['senha'] == $_POST['confirmaSenha']) {
