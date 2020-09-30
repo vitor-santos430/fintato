@@ -15,4 +15,4 @@ Estamos desenvolvendo um WebService, para que posteriormente possamos consumir a
 Os codigos da API estão na pasta API dentro da pasta Classes, onde você pode encontrar cada codigo da aplicação "API/Classes/"
 #
 # Imagens do projeto
-<img src="https://mega.nz/file/ro4xRQaC#wfGO_IJe_QIxjhbBrtYT05nc6xHevSajbTgvNiH9QmE">
+<img src="https://github.com/vitor-santos430/fintato/blob/master/img/fintato.PNG">
