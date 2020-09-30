@@ -1,5 +1,7 @@
 # fintato
 Plataforma para controle de finanças de microempreendedores.
+O nome surgiu da junção de duas palavras "Fin" - Finanças e "Tato" - Potato, é como se controlar as finanças fosse batata, ou seja uma expressão que indica que algo é fácil.
+
 API criada usando PHP, cliente PHP, bootstrap, javascript. Posteriormente será criado um aplicativo que também irá consumir a API.
 
 # Como executar
@@ -16,3 +18,5 @@ Os codigos da API estão na pasta API dentro da pasta Classes, onde você pode e
 #
 # Imagens do projeto
 <img src="https://github.com/vitor-santos430/fintato/blob/master/img/fintato.PNG">
+## Dashboard
+<img src="https://github.com/vitor-santos430/fintato/blob/master/img/fintato_dash.PNG" >
