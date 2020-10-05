@@ -3,10 +3,6 @@
 require_once 'Banco.php';
 
 class Usuario{
-    // public $nome;
-    // public $email;
-    // public $senha;
-    // public $access_key;
 
     public function cadastrar(){
         $nome = isset($_POST['nome'])?$_POST['nome']:'';
