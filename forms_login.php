@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <style>
         input{
             width: 15%;
@@ -15,7 +16,7 @@
     <form method="post">
         <input type="email" name="email" placeholder="E-mail" required> <br><br>
         <input type="password" name="senha" placeholder="Senha" required> <br><br>
-        <button type="submit" name="entrar" style="cursor: pointer;">Cadastrar</button>
+        <button type="submit" name="entrar" style="cursor: pointer;">Entrar</button>
     </form>
     <?php
         if(isset($_POST['entrar'])){
@@ -42,11 +43,12 @@
                 echo $retorno['dados']['msg'];
                 session_start();
                 $_SESSION['user'] = array(
+                    'nome'=>$retorno['dados']['nome'],
                     'key'=>$retorno['dados']['accessKey'],
                     'id'=>$retorno['dados']['id']
                 );
 
-                echo '<br><a href="forms_editar.php?id='.$_SESSION['user']['id'].'">Editar dados</a>';
+                header('location: painel.php');
             }else{
                 echo $retorno['dados'];
             }

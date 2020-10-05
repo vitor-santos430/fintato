@@ -28,6 +28,7 @@
 </head>
 <body>
     <h1>Teste Atualizar dados</h1>
+    <a href="painel.php">PAINEL</a><br>
     <form method="post">
         <input type="text" name="nome" placeholder="Nome" value="<?= $dados['dados']['nome'] ?>" required> <br><br>
         <input type="email" name="email" placeholder="E-mail" value="<?= $dados['dados']['email'] ?>" required> <br><br>

@@ -90,6 +90,7 @@ class Usuario{
             $senhaBanco = $row['senha'];
             if(crypt($senha, $senhaBanco) == $senhaBanco){
                 $resultados = array(
+                    'nome'=>$row['nome'],
                     'accessKey'=>$row['access_key'],
                     'msg'=>"Login efetuado com sucesso!",
                     'id'=>$row['id_usuario']

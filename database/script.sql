@@ -1,3 +1,4 @@
+
 create database db_fintato;
 
 use db_fintato;
@@ -37,3 +38,4 @@ create table tb_receitas(
 );
 
 select * from tb_usuario;
+desc tb_receitas;
